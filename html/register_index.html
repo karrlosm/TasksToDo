@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | TASKS TO DO</title>
+</head>
+<body>
+    <h1>Cadastro de usuário</h1>
+    <form action="">
+        <label for="name">Nome de usuário:</label>
+        <input type="name" id="nameipt"> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="emailipt"> <br>
+        <label for="pass">Senha:</label>
+        <input type="password" id="passipt"> <br>
+    </form>
+
+    <button id="registerbtn">Registre-se</button>
+    <a href="../html/login_index.html"><button>Fazer login</button></a> 
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBPfCSK9dxpDu9Jy8rD-BdpgvgxwRD7xIg",
+      authDomain: "minhastarefas-01.firebaseapp.com",
+      projectId: "minhastarefas-01",
+      storageBucket: "minhastarefas-01.appspot.com",
+      messagingSenderId: "966198029185",
+      appId: "1:966198029185:web:e5f07e9f482d08bc2a5680"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+
+</script>
+
+<script type="module" src="../controller/User/Register/RegisterUser.js"></script>
+
+
+</html>

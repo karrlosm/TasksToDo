@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TASKS TO DO</title>
+</head>
+<body>
+    <h1>Login de usuário</h1>
+    <form action="">
+        <label for="Nome:">Nome:</label>
+        <input type="name" id="nameipt"> <br>
+        <label for="pass">Senha:</label>
+        <input type="password" id="passipt"> <br>
+
+    </form>
+
+    <button id="loginbtn">Fazer login</button> 
+    <a href="../html/register_index.html"><button>Registre-se</button></a>
+</body>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyBPfCSK9dxpDu9Jy8rD-BdpgvgxwRD7xIg",
+      authDomain: "minhastarefas-01.firebaseapp.com",
+      projectId: "minhastarefas-01",
+      storageBucket: "minhastarefas-01.appspot.com",
+      messagingSenderId: "966198029185",
+      appId: "1:966198029185:web:e5f07e9f482d08bc2a5680"
+    };
+
+    const app = initializeApp(firebaseConfig);
+
+</script>
+
+<script type="module" src="../controller/User/Login/LoginUser.js"></script>
+</html>

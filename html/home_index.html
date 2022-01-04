@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | TASKS TO DO</title>
+    <link rel="stylesheet" href="../css/home_style.css">
+    <script type="module" src="../controller/OpenHome.js"></script>
+</head>
+<body>
+    <header>
+        <h1>TASKS TO DO</h1> 
+    </header>
+
+    <div class="content_tasks">
+        <div class="addtaskcont">
+            <div class="labeltittle">
+                Nova tarefa
+            </div>
+            <div class="form_newtask">
+                <label for="tarefa_tittle">Título da tarefa:</label> <br>
+                <input maxlength="50" required type="text" id="tarefa_tittle" class="input_camp"> <br>
+                <label for="descricao_tarefa">Descrição:</label> <br>
+                <textarea name="" id="descricao_tarefa" cols="49" rows="10" class="area_camp"></textarea> <br>
+                <button id="addtarefa" class="addbtn">Adicionar</button>
+            </div>
+            
+        </div>
+
+        <div class="readtasks" id="readtasks">
+            
+            
+        </div>
+    </div>
+    <footer>
+        <button class="footerbtn" id="logoutbtn">Sair</button>
+        <button class="footerbtn" id="deleteuser">Excluir conta</button>
+    </footer>
+    
+</body>
+
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyBPfCSK9dxpDu9Jy8rD-BdpgvgxwRD7xIg",
+      authDomain: "minhastarefas-01.firebaseapp.com",
+      projectId: "minhastarefas-01",
+      storageBucket: "minhastarefas-01.appspot.com",
+      messagingSenderId: "966198029185",
+      appId: "1:966198029185:web:e5f07e9f482d08bc2a5680"
+    };
+
+    const app = initializeApp(firebaseConfig);
+</script>
+
+
+<script type="module" src="../controller/AddTask.js"></script>
+<script type="module" src="../controller/ReadTask.js"></script>
+<script src="../controller/User/Login/LogoutUser.js"></script>
+<script type="module" src="../controller/User/Register/DeleteUser.js"></script>
+
+
+</html>
